@@ -1,0 +1,268 @@
+[
+  {
+    "id": "sim-penalty-q1",
+    "source": "模擬文宣資料",
+    "paragraph": "月月穩領現金流",
+    "task": "請判斷該段文字是否涉及🔴明顯觸法或🟠略有風險，並說明理由與適用法規",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "模擬測試",
+      "文宣檢視"
+    ],
+    "difficulty": "easy",
+    "reference_answer": [
+      {
+        "text": "月月穩領現金流",
+        "label": "🔴 明顯觸法",
+        "reason": "強調固定收益，具保證收益之誤導風險",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "sim-penalty-q2",
+    "source": "模擬文宣資料",
+    "paragraph": "退休後每月安心收息",
+    "task": "請判斷該段文字是否涉及🔴明顯觸法或🟠略有風險，並說明理由與適用法規",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "模擬測試",
+      "文宣檢視"
+    ],
+    "difficulty": "easy",
+    "reference_answer": [
+      {
+        "text": "退休後每月安心收息",
+        "label": "🔴 明顯觸法",
+        "reason": "暗示保證退休收入來源，構成誤導",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "sim-penalty-q3",
+    "source": "模擬文宣資料",
+    "paragraph": "一次配置，終身領息",
+    "task": "請判斷該段文字是否涉及🔴明顯觸法或🟠略有風險，並說明理由與適用法規",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "模擬測試",
+      "文宣檢視"
+    ],
+    "difficulty": "easy",
+    "reference_answer": [
+      {
+        "text": "一次配置，終身領息",
+        "label": "🔴 明顯觸法",
+        "reason": "具永續性保證語意，違反揭露原則",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "sim-penalty-q4",
+    "source": "模擬文宣資料",
+    "paragraph": "高股息神隊友",
+    "task": "請判斷該段文字是否涉及🔴明顯觸法或🟠略有風險，並說明理由與適用法規",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "模擬測試",
+      "文宣檢視"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "高股息神隊友",
+        "label": "🟠 略有風險",
+        "reason": "誇大效果，導致投資人誤判風險",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "sim-penalty-q5",
+    "source": "模擬文宣資料",
+    "paragraph": "打造你的被動收入新人生",
+    "task": "請判斷該段文字是否涉及🔴明顯觸法或🟠略有風險，並說明理由與適用法規",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "模擬測試",
+      "文宣檢視"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "打造你的被動收入新人生",
+        "label": "🟠 略有風險",
+        "reason": "未清楚揭示投資風險與條件",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "sim-penalty-q6",
+    "source": "模擬文宣資料",
+    "paragraph": "躺著賺配息",
+    "task": "請判斷該段文字是否涉及🔴明顯觸法或🟠略有風險，並說明理由與適用法規",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "模擬測試",
+      "文宣檢視"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "躺著賺配息",
+        "label": "🟠 略有風險",
+        "reason": "過度簡化投資回報過程",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "sim-penalty-q7",
+    "source": "模擬文宣資料",
+    "paragraph": "年年高殖利率回饋",
+    "task": "請判斷該段文字是否涉及🔴明顯觸法或🟠略有風險，並說明理由與適用法規",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "模擬測試",
+      "文宣檢視"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "年年高殖利率回饋",
+        "label": "🟠 略有風險",
+        "reason": "強調歷史績效，未說明非保證",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "sim-penalty-q8",
+    "source": "模擬文宣資料",
+    "paragraph": "輕鬆月領息、現金自由選",
+    "task": "請判斷該段文字是否涉及🔴明顯觸法或🟠略有風險，並說明理由與適用法規",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "模擬測試",
+      "文宣檢視"
+    ],
+    "difficulty": "hard",
+    "reference_answer": [
+      {
+        "text": "輕鬆月領息、現金自由選",
+        "label": "🔴 明顯觸法",
+        "reason": "宣稱穩定回報與彈性領取，誤導性高",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "sim-penalty-q9",
+    "source": "模擬文宣資料",
+    "paragraph": "不論市況，月配不間斷",
+    "task": "請判斷該段文字是否涉及🔴明顯觸法或🟠略有風險，並說明理由與適用法規",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "模擬測試",
+      "文宣檢視"
+    ],
+    "difficulty": "hard",
+    "reference_answer": [
+      {
+        "text": "不論市況，月配不間斷",
+        "label": "🔴 明顯觸法",
+        "reason": "保證配息與抗市場波動，違法表述",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "sim-penalty-q10",
+    "source": "模擬文宣資料",
+    "paragraph": "穩健收息ETF，風險極低",
+    "task": "請判斷該段文字是否涉及🔴明顯觸法或🟠略有風險，並說明理由與適用法規",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "模擬測試",
+      "文宣檢視"
+    ],
+    "difficulty": "hard",
+    "reference_answer": [
+      {
+        "text": "穩健收息ETF，風險極低",
+        "label": "🔴 明顯觸法",
+        "reason": "直接誤導風險評估，違法宣稱",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  [
+  {
+    "id": "fb-penalty-q1",
+    "source": "模擬社群文宣場景",
+    "paragraph": "🚆 台鐵票價調漲，出門也能不怕傷荷包！搭乘台鐵於CUBE App領券，刷卡最高享30%回饋🌟",
+    "task": "請判斷該段文字是否涉及🔴明顯觸法或🟠略有風險，並說明理由與適用法規",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "金融法務",
+      "社群文宣",
+      "公平交易法"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "刷卡最高享30%回饋",
+        "label": "🟠 略有風險",
+        "reason": "未明確揭示活動限制與門檻，可能使消費者誤認所有刷卡皆適用最高回饋",
+        "law": "《公平交易法》第21條第1項"
+      }
+    ]
+  },
+  {
+    "id": "fb-penalty-q2",
+    "source": "模擬社群文宣場景",
+    "paragraph": "🎤 週三歡唱日｜KTV歡唱，用49點小樹點(信用卡)還能兌換錢櫃酸菜牛肉麵！",
+    "task": "請判斷該段文字是否涉及🔴明顯觸法或🟠略有風險，並說明理由與適用法規",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "金融法務",
+      "社群文宣",
+      "公平交易法"
+    ],
+    "difficulty": "easy",
+    "reference_answer": [
+      {
+        "text": "用49點小樹點(信用卡)還能兌換錢櫃酸菜牛肉麵！",
+        "label": "🟠 略有風險",
+        "reason": "未說明是否為所有門市皆適用、是否限量或條件限制，資訊不充分",
+        "law": "《公平交易法》第21條第1項"
+      }
+    ]
+  },
+  {
+    "id": "fb-penalty-q3",
+    "source": "模擬社群文宣場景",
+    "paragraph": "🍻 週五微醺日｜1點小樹點(信用卡)兌換臺虎精釀指定生啤買一送一，快樂乾杯！",
+    "task": "請判斷該段文字是否涉及🔴明顯觸法或🟠略有風險，並說明理由與適用法規",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "金融法務",
+      "社群文宣",
+      "公平交易法",
+      "酒類行銷"
+    ],
+    "difficulty": "hard",
+    "reference_answer": [
+      {
+        "text": "1點小樹點(信用卡)兌換臺虎精釀指定生啤買一送一",
+        "label": "🔴 明顯觸法",
+        "reason": "涉及酒類促銷但未標示酒後不開車與相關警語，亦未揭示是否限量與門市限制，違反金融與廣告管理規範",
+        "law": "《公平交易法》第21條第1項；《菸酒管理法》第30條"
+      }
+    ]
+  }
+]
+]

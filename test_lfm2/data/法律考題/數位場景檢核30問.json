@@ -1,0 +1,749 @@
+[
+  {
+    "id": "digital-compliance-q1",
+    "scenario": "App 提供投資組合試算功能，使用者輸入薪資與退休年齡後，畫面顯示：「你將可穩定月領 35,000 元」。",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "試算結果揭露",
+      "UX"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "你將可穩定月領 35,000 元",
+        "label": "🔴 明顯觸法",
+        "reason": "該表述暗示保證收益與現金流穩定性，可能違反《金融消費者保護法》第30條之1第1項第1款。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q2",
+    "scenario": "用戶在信用卡紅利頁面看到「點數 1:1 折抵現金，不限通路天天都可用」的宣傳文字。",
+    "task": "請判斷此表述是否有潛在違規風險，並說明是否涉及公平交易法第21條。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "點數揭露",
+      "公平交易法"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "easy",
+    "reference_answer": [
+      {
+        "text": "不限通路天天都可用",
+        "label": "🟠 略有風險",
+        "reason": "如實際限制部分商家或排除特定品項，此表述可能構成引人錯誤之表示。",
+        "law": "《公平交易法》第21條第1項"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q3",
+    "scenario": "App 內顯示：「立即申購這檔基金，年化報酬率 8% 等你來拿！」",
+    "task": "請依金融相關法規判斷此句是否構成違規，並列舉具體理由與法源依據。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "基金行銷",
+      "數位揭露",
+      "年報酬率"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "hard",
+    "reference_answer": [
+      {
+        "text": "年化報酬率 8% 等你來拿！",
+        "label": "🔴 明顯觸法",
+        "reason": "未揭示報酬率為過去數據或潛在風險，並以行銷語氣引導投資期待，違反金融商品揭露義務。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q4",
+    "scenario": "用戶在保險試算頁面看到：「輸入年齡與保額，立即預測你的退休現金流」結果顯示「你將每月領得 28,000 元」。",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "「輸入年齡與保額，立即預測你的退休現金流」結果顯示「你將每月領得 28,000 元」",
+        "label": "🔴 明顯觸法",
+        "reason": "預測結果呈現具保證性質之現金流，易誤導投資人產生穩定收益之期待。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q5",
+    "scenario": "CUBE App 顯示：「保證三年內投資正報酬，否則退回差額」的基金活動標語。",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "hard",
+    "reference_answer": [
+      {
+        "text": "「保證三年內投資正報酬，否則退回差額」的基金活動標語",
+        "label": "🔴 明顯觸法",
+        "reason": "該標語直接保證投資結果且承諾退賠機制，明顯違反保本與收益保證之禁令。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q6",
+    "scenario": "信用卡綁定 Apple Pay 時畫面顯示：「筆筆回饋最高10%，筆筆都有回饋」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "「筆筆回饋最高10%，筆筆都有回饋」",
+        "label": "🟠 略有風險",
+        "reason": "如未揭示門檻與限制，可能造成消費者誤認所有交易皆適用最高回饋。",
+        "law": "《公平交易法》第21條第1項"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q7",
+    "scenario": "App 顯示「基金排行榜前五強，三年年化報酬率 9.1%，立即申購享收益」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "hard",
+    "reference_answer": [
+      {
+        "text": "App 顯示「基金排行榜前五強，三年年化報酬率 9.1%，立即申購享收益」",
+        "label": "🔴 明顯觸法",
+        "reason": "誤導投資人誤認為過去報酬可持續再現，並未揭示風險與過去績效之非保證性。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q8",
+    "scenario": "App 顯示：「綁定行動支付即享 100 元現金回饋！」未提及限定新戶",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "easy",
+    "reference_answer": [
+      {
+        "text": "「綁定行動支付即享 100 元現金回饋！」未提及限定新戶",
+        "label": "🟠 略有風險",
+        "reason": "如該活動僅限新戶，未說明即違反資訊揭露義務，造成誤導效果。",
+        "law": "《公平交易法》第21條第1項"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q9",
+    "scenario": "使用者於自動投資功能啟用頁看到：「只要每月固定投入，幫你穩穩賺」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "「只要每月固定投入，幫你穩穩賺」",
+        "label": "🔴 明顯觸法",
+        "reason": "表述明確傳達可穩定獲利，違反不得保證或暗示投資成果之規定。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q10",
+    "scenario": "CUBE App 顯示：「挑選最適合你的高收益基金，不滿意可免費換檔！」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "「挑選最適合你的高收益基金，不滿意可免費換檔！」",
+        "label": "🟠 略有風險",
+        "reason": "「高收益」為潛在誤導詞彙，應揭露風險與非保證性質。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q11",
+    "scenario": "用戶登入後收到推播訊息：「你的投資風格已分析完成！這檔 ETF 最適合你」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "「你的投資風格已分析完成！這檔 ETF 最適合你」",
+        "label": "🟠 略有風險",
+        "reason": "推播推薦單一商品，若無揭示依據或風險揭露，恐涉引導投資決定之誤導行銷。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q12",
+    "scenario": "信用卡申辦流程中出現：「刷越多，回饋越高無上限！」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "hard",
+    "reference_answer": [
+      {
+        "text": "「刷越多，回饋越高無上限！」",
+        "label": "🔴 明顯觸法",
+        "reason": "未揭示門檻與上限條件，若實際有限制則構成不實廣告。",
+        "law": "《公平交易法》第21條第1項"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q13",
+    "scenario": "保單借款功能頁標語：「申請即撥款，免審核立即入帳」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "「申請即撥款，免審核立即入帳」",
+        "label": "🔴 明顯觸法",
+        "reason": "過度簡化程序且標榜免審核，有誤導消費者風險。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q14",
+    "scenario": "App 顯示：「AI 幫你選股，輕鬆勝過大盤」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "hard",
+    "reference_answer": [
+      {
+        "text": "「AI 幫你選股，輕鬆勝過大盤」",
+        "label": "🔴 明顯觸法",
+        "reason": "該語句承諾特定投資績效且未說明風險，構成違規保證收益。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q15",
+    "scenario": "ETF 頁面說明：「參與經濟成長紅利，穩穩收息」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "「參與經濟成長紅利，穩穩收息」",
+        "label": "🟠 略有風險",
+        "reason": "未揭示潛在市場波動與配息不保證，語句可能引導錯誤預期。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q16",
+    "scenario": "App 顯示：「設定目標金額，財富自由指日可待！」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "easy",
+    "reference_answer": [
+      {
+        "text": "「設定目標金額，財富自由指日可待！」",
+        "label": "🟠 略有風險",
+        "reason": "誇張表述投資目標達成可能性，應提醒投資有賺有賠。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q17",
+    "scenario": "CUBE App 顯示：「試算後可得退休金總額 800 萬元」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "「試算後可得退休金總額 800 萬元」",
+        "label": "🟠 略有風險",
+        "reason": "未揭示試算假設條件與不保證性質，恐誤導消費者。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q18",
+    "scenario": "投保頁標語：「只要三步驟，保費最便宜、理賠最快速」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "hard",
+    "reference_answer": [
+      {
+        "text": "「只要三步驟，保費最便宜、理賠最快速」",
+        "label": "🔴 明顯觸法",
+        "reason": "宣稱理賠快速、費用最優，若無客觀依據則違反誠實揭露原則。",
+        "law": "《保險法》第144條、《公平交易法》第21條"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q19",
+    "scenario": "App 顯示：「這檔基金 5 年來穩定配息，每年都超過 6%」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "hard",
+    "reference_answer": [
+      {
+        "text": "「這檔基金 5 年來穩定配息，每年都超過 6%」",
+        "label": "🔴 明顯觸法",
+        "reason": "強調歷史配息表現為穩定收益，未揭示風險或變動性。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q20",
+    "scenario": "信用卡活動頁顯示：「新戶享首刷 5,000 點，立即享受現金回饋！」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "「新戶享首刷 5,000 點，立即享受現金回饋！」",
+        "label": "🟠 略有風險",
+        "reason": "如未說明回饋條件或門檻，可能造成誤導。",
+        "law": "《公平交易法》第21條第1項"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q21",
+    "scenario": "用戶登入後收到推播訊息：「你的投資風格已分析完成！這檔 ETF 最適合你」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "「你的投資風格已分析完成！這檔 ETF 最適合你」",
+        "label": "🟠 略有風險",
+        "reason": "推播推薦單一商品，若無揭示依據或風險揭露，恐涉引導投資決定之誤導行銷。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q22",
+    "scenario": "信用卡申辦流程中出現：「刷越多，回饋越高無上限！」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "hard",
+    "reference_answer": [
+      {
+        "text": "「刷越多，回饋越高無上限！」",
+        "label": "🔴 明顯觸法",
+        "reason": "未揭示門檻與上限條件，若實際有限制則構成不實廣告。",
+        "law": "《公平交易法》第21條第1項"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q23",
+    "scenario": "保單借款功能頁標語：「申請即撥款，免審核立即入帳」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "「申請即撥款，免審核立即入帳」",
+        "label": "🔴 明顯觸法",
+        "reason": "過度簡化程序且標榜免審核，有誤導消費者風險。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q24",
+    "scenario": "App 顯示：「AI 幫你選股，輕鬆勝過大盤」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "hard",
+    "reference_answer": [
+      {
+        "text": "「AI 幫你選股，輕鬆勝過大盤」",
+        "label": "🔴 明顯觸法",
+        "reason": "該語句承諾特定投資績效且未說明風險，構成違規保證收益。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q25",
+    "scenario": "ETF 頁面說明：「參與經濟成長紅利，穩穩收息」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "「參與經濟成長紅利，穩穩收息」",
+        "label": "🟠 略有風險",
+        "reason": "未揭示潛在市場波動與配息不保證，語句可能引導錯誤預期。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q26",
+    "scenario": "App 顯示：「設定目標金額，財富自由指日可待！」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "easy",
+    "reference_answer": [
+      {
+        "text": "「設定目標金額，財富自由指日可待！」",
+        "label": "🟠 略有風險",
+        "reason": "誇張表述投資目標達成可能性，應提醒投資有賺有賠。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q27",
+    "scenario": "CUBE App 顯示：「試算後可得退休金總額 800 萬元」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "「試算後可得退休金總額 800 萬元」",
+        "label": "🟠 略有風險",
+        "reason": "未揭示試算假設條件與不保證性質，恐誤導消費者。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q28",
+    "scenario": "投保頁標語：「只要三步驟，保費最便宜、理賠最快速」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "hard",
+    "reference_answer": [
+      {
+        "text": "「只要三步驟，保費最便宜、理賠最快速」",
+        "label": "🔴 明顯觸法",
+        "reason": "宣稱理賠快速、費用最優，若無客觀依據則違反誠實揭露原則。",
+        "law": "《保險法》第144條、《公平交易法》第21條"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q29",
+    "scenario": "App 顯示：「這檔基金 5 年來穩定配息，每年都超過 6%」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "hard",
+    "reference_answer": [
+      {
+        "text": "「這檔基金 5 年來穩定配息，每年都超過 6%」",
+        "label": "🔴 明顯觸法",
+        "reason": "強調歷史配息表現為穩定收益，未揭示風險或變動性。",
+        "law": "《金融消費者保護法》第30條之1第1項第1款"
+      }
+    ]
+  },
+  {
+    "id": "digital-compliance-q30",
+    "scenario": "信用卡活動頁顯示：「新戶享首刷 5,000 點，立即享受現金回饋！」",
+    "task": "請判斷此畫面內容是否涉及🔴明顯觸法或🟠略有風險，並說明理由與引用相關法規。",
+    "expected_output_type": "list of labels with explanation",
+    "tags": [
+      "數位業務",
+      "UX",
+      "金融法規"
+    ],
+    "dimensions": [
+      "legal_interpretation",
+      "contextual_compliance",
+      "risk_phrase_identification"
+    ],
+    "difficulty": "medium",
+    "reference_answer": [
+      {
+        "text": "「新戶享首刷 5,000 點，立即享受現金回饋！」",
+        "label": "🟠 略有風險",
+        "reason": "如未說明回饋條件或門檻，可能造成誤導。",
+        "law": "《公平交易法》第21條第1項"
+      }
+    ]
+  }
+]
